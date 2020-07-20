@@ -8,7 +8,364 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
   </head>
-  <body>
-
+  <body class="page">
+    <header>
+      <div class="logotype">
+        <a class="logotype__link" href="#">
+          DEVICE
+        </a>
+      </div>
+      <div class="main-header__top">
+        <input class="main-header__top-search-form" type="search" />
+        <a class="main-header__top-log-in">
+          Войти
+        </a>
+        <a class="main-header__top-compare">
+          Сравнить
+        </a>
+        <a class="main-header__top-cart">
+          Корзина
+        </a>
+      </div>
+      <div class="main-header__bottom">
+        <div class="catalogue">
+          <a class="catalogue__link" href="#">
+            Каталог товаров
+          </a>
+        </div>
+        <nav class="navigation-site">
+          <ul class="navigation-site__list">
+            <li class="navigation-site__list-item">
+              Доставка
+            </li>
+            <li class="navigation-site__list-item">
+              Гарантия
+            </li>
+            <li class="navigation-site__list-item">
+              Контакты
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-content">
+      <section class="slider">
+        <ul class="slider__list">
+          <li class="slider__list-item slider__list-item--active">
+            <div class="slide">
+              <img
+                class="slide__img"
+                src="img/png/slider-1.png"
+                alt="selfie stick"
+                height="486"
+                width="384"
+              />
+              <h1 class="slide__slogan">
+                Делай селфи, как Бен Стиллер!
+              </h1>
+              <p class="slide__description">
+                Самая длинная палка для селфи доступна в нашем магазине. Восемь
+                (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+              </p>
+              <button class="slide__button-details">
+                Подробнее
+              </button>
+              <table class="slide__table">
+                <tr class="slide__table-string--bold">
+                  <td class="slide__table-item">8,5 м</td>
+                  <td class="slide__table-item">5 кг</td>
+                  <td class="slide__table-item">Карбон</td>
+                </tr>
+                <tr class="slide__table-string">
+                  <td class="slide__table-item">Длина палки</td>
+                  <td class="slide__table-item">Вес палки</td>
+                  <td class="slide__table-item">Материал</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="popular">
+        <ul class="popular__list">
+          <li class="popular__list-item">
+            <img
+              class="popular__img"
+              src="img/svg/popular-1.svg"
+              alt="virtual reality"
+              height="55"
+              width="97"
+            />
+            <p class="popular__description">
+              Виртуальная реальность
+            </p>
+          </li>
+          <li class="popular__list-item">
+            <img
+              class="popular__img"
+              src="img/svg/popular-2.svg"
+              alt="virtual reality"
+              height="117"
+              width="86"
+            />
+            <p class="popular__description">
+              Моноподы для селфи
+            </p>
+          </li>
+          <li class="popular__list-item">
+            <img
+              class="popular__img"
+              src="img/svg/popular-3.svg"
+              alt="virtual reality"
+              height="87"
+              width="71"
+            />
+            <p class="popular__description">
+              Экшн-камеры
+            </p>
+          </li>
+          <li class="popular__list-item">
+            <img
+              class="popular__img"
+              src="img/svg/popular-4.svg"
+              alt="virtual reality"
+              height="65"
+              width="107"
+            />
+            <p class="popular__description">
+              Фитнес-браслеты
+            </p>
+          </li>
+          <li class="popular__list-item">
+            <img
+              class="popular__img"
+              src="img/svg/popular-5.svg"
+              alt="virtual reality"
+              height="98"
+              width="56"
+            />
+            <p class="popular__description">
+              Умные часы
+            </p>
+          </li>
+          <li class="popular__list-item">
+            <img
+              class="popular__img"
+              src="img/svg/popular-6.svg"
+              alt="virtual reality"
+              height="69"
+              width="132"
+            />
+            <p class="popular__description">
+              Квадрокоптеры
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="services">
+        <div class="tabs-controller">
+          <ul class="tabs-controller__list">
+            <li
+              class="tabs-controller__list-item tabs-controller__list-item--active"
+            >
+              <button class="tabs-controller__button">
+                Доставка
+              </button>
+            </li>
+            <li class="tabs-controller__list-item">
+              <button class="tabs-controller__button">
+                Гарантия
+              </button>
+            </li>
+            <li class="tabs-controller__list-item">
+              <button class="tabs-controller__button">
+                Кредит
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="tabs">
+          <ul class="tabs__list">
+            <li class="tabs__list-item tabs__list-item--active">
+              <h1 class="tabs__header">
+                Доставка
+              </h1>
+              <p class="tabs__description">
+                Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+                совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
+                на ваш этаж.
+              </p>
+              <img
+                class="tabs__img"
+                src="img/svg/delivery.svg"
+                alt="delivery"
+                height="164"
+                width="136"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="partners">
+        <ul class="partners__list">
+          <li class="partners__list-item">
+            <img
+              class="partners__img"
+              src="img/png/logo-1.png"
+              alt="first partner"
+              height="100"
+              width="260"
+            />
+          </li>
+          <li class="partners__list-item">
+            <img
+              class="partners__img"
+              src="img/png/logo-2.png"
+              alt="second partner"
+              height="100"
+              width="260"
+            />
+          </li>
+          <li class="partners__list-item">
+            <img
+              class="partners__img"
+              src="img/png/logo-3.png"
+              alt="third partner"
+              height="100"
+              width="260"
+            />
+          </li>
+          <li class="partners__list-item">
+            <img
+              class="partners__img"
+              src="img/png/logo-4.png"
+              alt="fourth partner"
+              height="100"
+              width="260"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="about-us">
+        <h1 class="about-us__header">
+          О нас
+        </h1>
+        <p class="about-us__description">
+          Огромный выбор гаджетов не оставит равнодушным гика, который есть в
+          каждом из нас. Мы можем доставить ваш товар в самые отдаленные точки
+          России! DEVICE работает со многими транспортными компаниями:
+        </p>
+        <ul class="about-us__list">
+          <li class="about-us__list-item">
+            Деловые Линии
+          </li>
+          <li class="about-us__list-item">
+            Автотрейдинг
+          </li>
+          <li class="about-us__list-item">
+            ЖелДорЭкспедиция
+          </li>
+        </ul>
+        <button class="about-us__button">Подробнее о нас</button>
+      </section>
+      <section class="contacts">
+        <h1 class="contacts__header">
+          Контакты
+        </h1>
+        <p class="contacts__description">
+          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+          проверить работоспособность покупки. Всякое бывает.
+        </p>
+        <img
+          class="contacts__map"
+          src="img/jpg/map.jpg"
+          alt="map"
+          height="222"
+          width="560"
+        />
+      </section>
+    </main>
+    <footer>
+      <div class="logotype">
+        <a class="logotype__link" href="#">
+          DEVICE
+        </a>
+      </div>
+      <div class="main-footer__top">
+        <a class="main-footer__top-log-in">
+          Войти
+        </a>
+        <a class="main-footer__top-compare">
+          Сравнить
+        </a>
+        <a class="main-footer__top-cart">
+          Корзина
+        </a>
+      </div>
+      <div class="main-footer__middle">
+        <p class="address">
+          г. Москва, ул. Строителей, 15
+        </p>
+        <nav class="navigation-site">
+          <ul class="navigation-site__list">
+            <li class="navigation-site__list-item">
+              Доставка
+            </li>
+            <li class="navigation-site__list-item">
+              Гарантия
+            </li>
+            <li class="navigation-site__list-item">
+              Контакты
+            </li>
+          </ul>
+        </nav>
+        <p class="phone-number">
+          Тел.: +7 (495) 495-95-95
+        </p>
+      </div>
+      <div class="main-footer__bottom">
+        <div class="decoration-line">-</div>
+        <ul class="social-buttons-list">
+          <li class="social-buttons-list-item">
+            <button class="social-buttons-list-item-button">
+              <img
+                class="social-buttons-list-item-img"
+                src="img/svg/fb.svg"
+                alt="facebook"
+                height="32"
+                width="32"
+              />
+            </button>
+            <button class="social-buttons-list-item-button">
+              <img
+                class="social-buttons-list-item-img"
+                src="img/svg/vk.svg"
+                alt="vkontakte"
+                height="32"
+                width="32"
+              />
+            </button>
+            <button class="social-buttons-list-item-button">
+              <img
+                class="social-buttons-list-item-img"
+                src="img/svg/twitter.svg"
+                alt="twitter"
+                height="32"
+                width="32"
+              />
+            </button>
+          </li>
+        </ul>
+        <div class="logotype-html-academy">
+          <a class="logotype-html-academy__link" href="#">
+            <img
+              class="logotype-html-academy__img"
+              src="img/svg/logo-html.svg"
+              alt="html academy"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
