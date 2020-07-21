@@ -3,7 +3,7 @@
 @import "fonts";
 @import "global/page";
 @import "blocks/header/header";
-@import "blocks/logotype/logotype";
+@import "blocks/logotype-header/logotype-header";
 @import "blocks/main-header-top/main-header-top";
 @import "blocks/main-header-bottom/main-header-bottom";
 @import "blocks/navigation-site/navigation-site";
@@ -13,3 +13,6 @@
 @import "blocks/about-us/about-us";
 @import "blocks/footer/footer";
 @import "blocks/social-buttons-list/social-buttons-list";
+@import "blocks/catalogue/catalogue";
+@import "blocks/slide/slide";
+@import "blocks/search-form/search-form";

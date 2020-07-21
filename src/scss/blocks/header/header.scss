@@ -1,6 +1,22 @@
 header {
   background-color: $header-color;
+  margin-top: 40px;
+
   a {
     color: black;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.2;
+    }
   }
+}
+
+.header-wrap {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding-bottom: 160px;
 }

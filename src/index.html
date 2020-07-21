@@ -9,56 +9,70 @@
     />
   </head>
   <body class="page">
-    <header>
-      <div class="logotype">
-        <a class="logotype__link" href="#">
-          <img
-            class="logotype__img"
-            src="img/svg/logotype-header.svg"
-            alt="site logo"
-            height="37"
-            width="164"
-          />
-        </a>
-      </div>
-      <div class="main-header-top">
-        <input
-          class="main-header-top__search-form"
-          type="search"
-          placeholder="Поиск по сайту"
-        />
-        <button class="main-header-top__search-button">Найти</button>
-        <a class="main-header-top__log-in" href="#">
-          Войти
-        </a>
-        <a class="main-header-top__compare" href="#">
-          Сравнить
-        </a>
-        <a class="main-header-top__cart" href="#">
-          Корзина
-        </a>
-      </div>
-      <div class="main-header-bottom">
-        <div class="catalogue">
-          <a class="catalogue__link" href="#">
-            Каталог товаров
-          </a>
+    <div class="container">
+      <header>
+        <div class="header-wrap">
+          <div class="logotype-header">
+            <a class="logotype-header__link" href="#">
+              <img
+                class="logotype-header__img"
+                src="img/svg/logotype-header.svg"
+                alt="site logo"
+                height="37"
+                width="164"
+              />
+            </a>
+          </div>
+          <div class="main-header-top">
+            <form
+              class="search-form"
+              action="http://echo.htmlacademy.ru"
+              method="get"
+            >
+              <label class="visually-hidden" for="search-form-input"></label>
+              <input
+                class="search-form__input"
+                id="search-form-input"
+                type="search"
+                placeholder="Поиск по сайту"
+              />
+              <button type="submit" class="search-form__button">Найти</button>
+            </form>
+            <a class="main-header-top__log-in" href="#">
+              Войти
+            </a>
+            <div class="top-header-wrap">
+              <a class="main-header-top__compare" href="#">
+                Сравнить
+              </a>
+              <a class="main-header-top__cart" href="#">
+                Корзина
+              </a>
+            </div>
+          </div>
+          <div class="main-header-bottom">
+            <div class="catalogue">
+              <a class="catalogue__link" href="#">
+                Каталог товаров
+              </a>
+            </div>
+            <nav class="navigation-site">
+              <ul class="navigation-site__list">
+                <li class="navigation-site__list-item">
+                  <a class="navigation-site__link" href="#">Доставка</a>
+                </li>
+                <li class="navigation-site__list-item">
+                  <a class="navigation-site__link" href="#">Гарантия</a>
+                </li>
+                <li class="navigation-site__list-item">
+                  <a class="navigation-site__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <nav class="navigation-site">
-          <ul class="navigation-site__list">
-            <li class="navigation-site__list-item">
-              <a class="navigation-site__link" href="#">Доставка</a>
-            </li>
-            <li class="navigation-site__list-item">
-              <a class="navigation-site__link" href="#">Гарантия</a>
-            </li>
-            <li class="navigation-site__list-item">
-              <a class="navigation-site__link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+      </header>
+    </div>
     <main>
       <section class="slider">
         <ul class="slider__list">
@@ -298,10 +312,10 @@
       </section>
     </main>
     <footer>
-      <div class="logotype">
-        <a class="logotype__link" href="#">
+      <div class="logotype-footer">
+        <a class="logotype-footer__link" href="#">
           <img
-            class="logotype__img"
+            class="logotype-footer__img"
             src="img/svg/logotype-footer.svg"
             alt="site logo"
           />
