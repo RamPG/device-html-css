@@ -1,3 +1,15 @@
+@import "global/normalize";
 @import "variables";
 @import "fonts";
-
+@import "global/page";
+@import "blocks/header/header";
+@import "blocks/logotype/logotype";
+@import "blocks/main-header-top/main-header-top";
+@import "blocks/main-header-bottom/main-header-bottom";
+@import "blocks/navigation-site/navigation-site";
+@import "blocks/slider/slider";
+@import "blocks/popular/popular";
+@import "blocks/services/services";
+@import "blocks/about-us/about-us";
+@import "blocks/footer/footer";
+@import "blocks/social-buttons-list/social-buttons-list";

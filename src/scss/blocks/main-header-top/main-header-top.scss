@@ -1,0 +1,10 @@
+.main-header-top {
+  font-family: "Open Sans";
+  &__search-form {
+    background-color: $header-color;
+    border: none;
+  }
+  &__search-form::placeholder {
+    color: #AEA45A;
+  }
+}

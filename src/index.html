@@ -12,22 +12,33 @@
     <header>
       <div class="logotype">
         <a class="logotype__link" href="#">
-          DEVICE
+          <img
+            class="logotype__img"
+            src="img/svg/logotype-header.svg"
+            alt="site logo"
+            height="37"
+            width="164"
+          />
         </a>
       </div>
-      <div class="main-header__top">
-        <input class="main-header__top-search-form" type="search" />
-        <a class="main-header__top-log-in">
+      <div class="main-header-top">
+        <input
+          class="main-header-top__search-form"
+          type="search"
+          placeholder="Поиск по сайту"
+        />
+        <button class="main-header-top__search-button">Найти</button>
+        <a class="main-header-top__log-in" href="#">
           Войти
         </a>
-        <a class="main-header__top-compare">
+        <a class="main-header-top__compare" href="#">
           Сравнить
         </a>
-        <a class="main-header__top-cart">
+        <a class="main-header-top__cart" href="#">
           Корзина
         </a>
       </div>
-      <div class="main-header__bottom">
+      <div class="main-header-bottom">
         <div class="catalogue">
           <a class="catalogue__link" href="#">
             Каталог товаров
@@ -36,19 +47,19 @@
         <nav class="navigation-site">
           <ul class="navigation-site__list">
             <li class="navigation-site__list-item">
-              Доставка
+              <a class="navigation-site__link" href="#">Доставка</a>
             </li>
             <li class="navigation-site__list-item">
-              Гарантия
+              <a class="navigation-site__link" href="#">Гарантия</a>
             </li>
             <li class="navigation-site__list-item">
-              Контакты
+              <a class="navigation-site__link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <main class="main-content">
+    <main>
       <section class="slider">
         <ul class="slider__list">
           <li class="slider__list-item slider__list-item--active">
@@ -61,11 +72,12 @@
                 width="384"
               />
               <h1 class="slide__slogan">
-                Делай селфи, как Бен Стиллер!
+                Делай селфи, <br />
+                как Бен Стиллер!
               </h1>
               <p class="slide__description">
-                Самая длинная палка для селфи доступна в нашем магазине. Восемь
-                (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                Самая длинная палка для селфи доступна в нашем магазине. <br />
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
               </p>
               <button class="slide__button-details">
                 Подробнее
@@ -288,17 +300,21 @@
     <footer>
       <div class="logotype">
         <a class="logotype__link" href="#">
-          DEVICE
+          <img
+            class="logotype__img"
+            src="img/svg/logotype-footer.svg"
+            alt="site logo"
+          />
         </a>
       </div>
       <div class="main-footer__top">
-        <a class="main-footer__top-log-in">
+        <a class="main-footer__top-log-in" href="#">
           Войти
         </a>
-        <a class="main-footer__top-compare">
+        <a class="main-footer__top-compare" href="#">
           Сравнить
         </a>
-        <a class="main-footer__top-cart">
+        <a class="main-footer__top-cart" href="#">
           Корзина
         </a>
       </div>
@@ -309,13 +325,13 @@
         <nav class="navigation-site">
           <ul class="navigation-site__list">
             <li class="navigation-site__list-item">
-              Доставка
+              <a class="navigation-site__link" href="#">Доставка</a>
             </li>
             <li class="navigation-site__list-item">
-              Гарантия
+              <a class="navigation-site__link" href="#">Гарантия</a>
             </li>
             <li class="navigation-site__list-item">
-              Контакты
+              <a class="navigation-site__link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -326,28 +342,32 @@
       <div class="main-footer__bottom">
         <div class="decoration-line">-</div>
         <ul class="social-buttons-list">
-          <li class="social-buttons-list-item">
-            <button class="social-buttons-list-item-button">
+          <li class="social-buttons-list__item">
+            <button class="social-buttons-list__button">
               <img
-                class="social-buttons-list-item-img"
+                class="social-buttons-list__img"
                 src="img/svg/fb.svg"
                 alt="facebook"
                 height="32"
                 width="32"
               />
             </button>
-            <button class="social-buttons-list-item-button">
+          </li>
+          <li class="social-buttons-list__item">
+            <button class="social-buttons-list__button">
               <img
-                class="social-buttons-list-item-img"
+                class="social-buttons-list__img"
                 src="img/svg/vk.svg"
                 alt="vkontakte"
                 height="32"
                 width="32"
               />
             </button>
-            <button class="social-buttons-list-item-button">
+          </li>
+          <li class="social-buttons-list__item">
+            <button class="social-buttons-list__button">
               <img
-                class="social-buttons-list-item-img"
+                class="social-buttons-list__img"
                 src="img/svg/twitter.svg"
                 alt="twitter"
                 height="32"
