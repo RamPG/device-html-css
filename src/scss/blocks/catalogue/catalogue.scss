@@ -4,4 +4,15 @@
   font-weight: 900;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  &__link:after {
+    content: "";
+    display: block;
+    position: relative;
+    float: right;
+    background-image: url("../img/svg/plus.svg");
+    width: 16px;
+    height: 16px;
+    left: 25px;
+    top: 5px;
+  }
 }

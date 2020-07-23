@@ -1,19 +1,22 @@
 .search-form {
   display: flex;
+
+  border-bottom: 2px solid black;
   &__input {
     width: 330px;
-
+    margin-left: 5px;
     background-color: $header-color;
 
     border: none;
-    border-bottom: 2px solid black;
     &::placeholder {
       color: #aea45a;
     }
   }
   &__button {
     text-transform: none;
-    border: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
     background-color: $header-color;
 
     font-weight: 300;
@@ -33,5 +36,11 @@
   }
   &:before {
     content: "";
+    display: block;
+    position: relative;
+    background-image: url("../img/svg/search.svg");
+    width: 16px;
+    height: 16px;
+    top: 15px;
   }
 }
