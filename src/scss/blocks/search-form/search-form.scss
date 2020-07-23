@@ -28,7 +28,10 @@
       color: white;
     }
     &:active {
-      color: #4C4C4C;
+      color: #4c4c4c;
     }
+  }
+  &:before {
+    content: "";
   }
 }

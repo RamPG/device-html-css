@@ -1,54 +1,47 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     mode: 'production',
-    entry: './src/index.js',
+    entry: './src/js/index.js',
     output: {
-        path: path.resolve(__dirname, 'build'),
+        path: path.resolve(__dirname, 'dist'),
         filename: 'index.js',
-        publicPath: ''
+        publicPath: '',
     },
     module: {
-
         rules: [
             {
+                enforce: 'pre',
                 test: /\.js$/,
-                exclude: /node_modules/
+                exclude: /(node_modules|bower_components)/,
+                loader: 'source-map-loader',
             },
             {
-                test: /\.(ttf|otf|eot|woff|woff2)$/,
+                test: /\.js$/,
+                exclude: /(node_modules|bower_components)/,
                 use: [
                     {
-                        loader: 'file-loader',
+                        loader: 'babel-loader',
                         options: {
-                            outputPath: 'fonts',
-                            name: '[name].[ext]'
-                        }
-                    }
-                ]
+                            presets: [
+                                [
+                                    '@babel/preset-env',
+                                    {
+                                        corejs: 3,
+                                        useBuiltIns: 'usage',
+                                        debug: true,
+                                        modules: false,
+                                    },
+                                ],
+                            ],
+                        },
+                    },
+                ],
             },
-            {
-                test: /\.(scss)$/,
-                use: [
-                    'style-loader', 'css-loader', 'sass-loader'
-                ]
-            }
-        ]
+        ],
     },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: './src/index.html'
-        }),
-        new CopyPlugin({
-            patterns: [
-                {from: './src/img', to: 'img'},
-            ]
-        })
-    ],
-    devServer: {
-        open: true,
-        historyApiFallback: true
-    }
+    devtool: 'source-map',
+    resolve: {
+        extensions: ['.js'],
+    },
 };
